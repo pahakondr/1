@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+	  <title> Moy urok </title>
+	  <script type="text/javascript" >
+			function proverka (form){
+				var fail;
+				var name = form.name.value;
+					if(name =="" || name ==" ")
+					fail ="введите имя" 
+			
+					alert(fail);
+						}
+		</script>		
+  </head>
+  
+    <body>
+	  <form action"" method="post" name="test" id="form">	  
+	  <label for="name"> имя:</label>	  
+	  <input type="text" name="name" placeholder="имя" id="name">
+	  </br></br>
+	  <label for="password"> пароль:</label>	  
+	  <input type="text" name="password" placeholder="password" id="password">
+	  </br> </br>
+	  <label for="email"> почта:</label>	  
+	  <input type="email" name="email" placeholder="email" id="email">
+	  </br></br>
+	  <input type="button" onclick="proverka(document.getElementById('form'))" name="submit" value="готово">
+	  </form>
+	  </body>
+	
+
+
+
+</html>
